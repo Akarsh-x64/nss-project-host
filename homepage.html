@@ -1,0 +1,388 @@
+<!-- I HEAVILY USED BOOTSTRAP -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSS NSUT CELL</title>
+    <link rel="icon" type="image/x-icon" href="https://nssnsut.vercel.app/images/header-images/nss-logo.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mainPicturebutwhy {
+            background: url('https://nssnsut.vercel.app/images/index-images/nsut-banner.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            aspect-ratio: 1679 / 550;
+            background-position: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .mainPicturebutwhy .mainPicturebutwhy-singular-button-here {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .mainPicturebutwhy h1, .mainPicturebutwhy p, .mainPicturebutwhy a {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .mainPicturebutwhy h1 {
+            font-size: 4rem;
+        }
+        .kindOfmainViewmaybe {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+        .kindOfmainViewmaybe_again_omg {
+            background-color: #FAF9F6;
+            padding: 60px 0;
+        }
+        .leaders {
+            margin-bottom: 30px;
+        }
+        .face-image {
+            height: 500px;
+            vertical-align: text-top;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+        }
+
+        .content::-webkit-scrollbar {
+            display: none;
+        }
+
+        .content {
+            padding-top: 100px;
+            flex: 1;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .hovering-button-for-notice {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            color: #19366B;
+            border: 2px solid #19366B;
+            border-radius: 25px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+        }
+        .hovering-button-for-notice:hover {
+            background-color: #19366B;
+            color: #fff;
+            border-color: #19366B;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .hovering-button-for-notice i {
+            margin-right: 8px;
+        }
+        .navbar-container {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            width: 100%;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #ffffff !important;
+        }
+        .navbar-left, .navbar-center, .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-center {
+            flex: 1;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .navbar-toggler {
+            background-color: #213D70;
+            border: none;
+        }
+        .navbar img {
+            height: 70px;
+            margin: 5px;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-center {
+                justify-content: center;
+                flex-direction: column;
+            }
+            .navbar-collapse {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+        .navbar,
+        .navbar-container {
+            border: none !important;
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+<body id="top">
+    <div class="navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="navbar-left">
+                <a class="navbar-brand" href="https://nss.gov.in/">
+                    <img src="https://nssnsut.vercel.app/images/header-images/nss-logo.png" alt="NSS Logo">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-center mx-auto">
+                    <a class="navbar-brand-mygov" href="https://mybharat.gov.in/">
+                        <img src="https://nssnsut.vercel.app/images/header-images/mybharat-logo.png" alt="My Bharat Logo">
+                    </a>
+                    <a class="navbar-brand-mygov" href="https://yas.gov.in/">
+                        <img src="https://nssnsut.vercel.app/images/header-images/yas-logo.png" alt="MoYAs Logo">
+                    </a>
+                    <a class="navbar-brand-mygov" href="https://viksitbharatsankalp.gov.in/">
+                        <img src="https://nssnsut.vercel.app/images/header-images/viksit-bharat-logo.png" alt="Viksit Bharat Logo">
+                    </a>
+                    <a class="navbar-brand-mygov" href="https://www.digitalindia.gov.in/">
+                        <img src="https://nssnsut.vercel.app/images/header-images/digital-india.png" alt="Digital India Logo">
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <a class="navbar-brand" href="http://nsut.ac.in/">
+                        <img src="https://nssnsut.vercel.app/images/header-images/nsut-logo.png" alt="NSUT Logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <header class="mainPicturebutwhy position-relative">
+            <section id="home">
+                <div class="mainPicturebutwhy-singular-button-here">
+                    <a href="http://nsut.ac.in/en/home" class="btn btn-light btn-lg" target="_blank">
+                        Visit the NSUT website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </section>
+        </header>
+
+        <section id="leadership" class="kindOfmainViewmaybe">
+            <h2 class="text-center mb-4">Our visionaries and leaders ✨</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 leaders">
+                        <div class="card">
+                            <img src="https://nssnsut.vercel.app/images/index-images/vc-image.jpeg" class="face-image" alt="Hon'ble Vice Chancellor">
+                            <div class="card-body">
+                                <h5 class="card-title">Hon'ble Vice Chancellor</h5>
+                                <h6 class="card-title">Prof. Anand Srivastava</h6>
+                                <p class="card-text">It is with great pride that I greet all members and supporters of the National Service Scheme (NSS) at Netaji Subhas University of Technology. NSS plays a vital role in shaping our students' character by fostering social responsibility and community service. NSS volunteers exemplify compassion, leadership, and selflessness through their dedication to various social initiatives. Their efforts inspire us and create a positive impact on society. I encourage every student to actively engage in NSS programs. Through service, you will not only make a difference but also develop valuable skills and lasting friendships. Thank you for your commitment to NSS. Your efforts help make our university a true beacon of change.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 leaders">
+                        <div class="card">
+                            <img src="https://nssnsut.vercel.app/images/index-images/coordinator-image.png" class="face-image" alt="Hon'ble Program Coordinator1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hon'ble Program Coordinator</h5>
+                                <h6 class="card-title">Dr. Praveen Saroha</h6>
+                                <p class="card-text">Welcome to the NSS NSUT Cell! It is an honor to serve as your Program Coordinator and work with such passionate individuals dedicated to making a positive impact. NSS is more than a program; it's a movement empowering students to tackle real-world challenges. Through initiatives in areas like environmental conservation and education, we foster service, leadership, and teamwork. Each project is an opportunity to grow and contribute to our community. I encourage you to embrace these experiences and bring your unique talents to our efforts. Thank you for your commitment to NSS. I look forward to the great work we'll accomplish together.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 leaders">
+                        <div class="card">
+                            <img src="https://nssnsut.vercel.app/images/index-images/anuj-sir.jpg" class="face-image" alt="Hon'ble Founding President<">
+                            <div class="card-body">
+                                <h5 class="card-title">Hon'ble Founding President</h5>
+                                <h6 class="card-title">Mr. Anuj</h6>
+                                <p class="card-text">As the Founding President of NSS NSUT Cell, I am filled with pride witnessing the remarkable journey we've shared. From our beginnings to becoming a community driven by service, our growth reflects the passion of every member. NSS is more than an organization—it's a way of life that inspires us to give back. Our projects in areas like environmental sustainability and social outreach embody our commitment to making a difference. Embrace the spirit of service. It's not just a duty but an opportunity to lead, empathize, and create change. Together, we can continue to amplify our impact and carry forward the NSS legacy. Thank you for your dedication. Let's keep achieving great things!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 leaders">
+                        <div class="card">
+                            <img src="https://nssnsut.vercel.app/images/volunteers-images/Shubham.jpeg" class="face-image" alt="The President">
+                            <div class="card-body">
+                                <h5 class="card-title">The President</h5>
+                                <h6 class="card-title">Shubham Kumar</h6>
+                                <p class="card-text">It's an honor to serve as the President of the NSS NSUT Cell and to witness the dedication and enthusiasm of our volunteers . Each initiative we undertake whether a cleanliness drive or an awareness campaign shows our commitment to social responsibility. I encourage everyone to get involved, as these experiences help us grow in leadership and empathy. Together, we can make a meaningful impact with your dedication. Let's continue to strive for excellence as epitome of change for the society! </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Notices" class="kindOfmainViewmaybe_again_omg">
+            <h2 class="text-center mb-4">Recent Notices 📬</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex align-items-center border p-3" style="background-color: #f8f9fa;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6747/6747196.png" alt="Image" class="img-fluid me-3" style="width: 120px; height: auto;padding-right: 20px;">
+                            <div>
+                              <h5>Entries are Invited for Volunteerism during GLA Elections-2025, Facilitation</h5>
+                              <h6>Dated: 29 Jan 2025</h6>
+                              <p>Invitation to Volunteer for Voting Process Facilitation Initiative.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex align-items-center border p-3" style="background-color: #f8f9fa;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6747/6747196.png" alt="Image" class="img-fluid me-3" style="width: 120px; height: auto;padding-right: 20px;">
+                            <div>
+                              <h5>National Youth Festival 2025</h5>
+                              <h6>Dated: 25 Nov 2024</h6>
+                              <p>Invitation to Participate in the Viksit Bharat Quiz Challenge.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex align-items-center border p-3" style="background-color: #f8f9fa;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6747/6747196.png" alt="Image" class="img-fluid me-3" style="width: 120px; height: auto;padding-right: 20px;">
+                            <div>
+                              <h5>Invitation to attend the NSS Orientation scheduled to be held in APJ-11</h5>
+                              <h6>Dated: 14 Oct 2024</h6>
+                              <p>Invitation to attend the NSS Orientation scheduled to be held in APJ-11</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex align-items-center border p-3" style="background-color: #f8f9fa;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6747/6747196.png" alt="Image" class="img-fluid me-3" style="width: 120px; height: auto;padding-right: 20px;">
+                            <div>
+                              <h5>NSS Credit Course Event-Work Hour List</h5>
+                              <h6>Dated: 27 Aug 2024</h6>
+                              <p>Work Hour List</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex align-items-center border p-3" style="background-color: #f8f9fa;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6747/6747196.png" alt="Image" class="img-fluid me-3" style="width: 120px; height: auto;padding-right: 20px;">
+                            <div>
+                              <h5>Community Internship Course NSS- Important Information</h5>
+                              <h6>Dated: 28 Jun 2024</h6>
+                              <p>Timely reminder and final call for all NSS Credit Course students </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex align-items-center border p-3" style="background-color: #f8f9fa;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6747/6747196.png" alt="Image" class="img-fluid me-3" style="width: 120px; height: auto;padding-right: 20px;">
+                            <div>
+                              <h5>Celebration of International Day of Yoga</h5>
+                              <h6>Dated: 20 Jun 2024</h6>
+                              <p>Yoga Mahotsav to celebrate the International Day of Yoga ’24 in NSUT under the aegis of Viksit Bharat@2047</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer bg-light text-black text-center py-4">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="https://x.com/nssnsutcell?lang=en" target="_blank" class="mx-3">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" width="30" height="30">
+                    </a>
+                    <a href="https://www.instagram.com/nssnsutcell/?hl=en" target="_blank" class="mx-3">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="30" height="30">
+                    </a>
+                    <a href="https://in.linkedin.com/company/nss-nsut-delhi" target="_blank" class="mx-3">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="30" height="30">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCZRtEXP1DKBS4RHyxkXlRuQ" target="_blank" class="mx-3">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" width="30" height="30">
+                    </a>
+                </div>
+                <p  style="margin-top: 15px;">contact us at <a href="mailto:nsscoordinator.nsut@gmail.com">nsscoordinator.nsut@gmail.com</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <button class="hovering-button-for-notice btn btn-light btn-lg" onclick="document.getElementById('Notices').scrollIntoView({ behavior: 'smooth' });">
+        View new notices
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function smoothScroll(event, target) {
+            event.preventDefault();
+            document.querySelector(target).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
